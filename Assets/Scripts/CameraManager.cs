@@ -9,7 +9,7 @@ public class CameraManager : MonoBehaviour
     float speed = 5;
     private void Update()
     {
-         //= (pl.position + offset)*Time.deltaTime;
+        
         Camera.main.transform.position = Vector3.Lerp(transform.position, pl.transform.position+offset, speed * Time.deltaTime);
     }
 }
